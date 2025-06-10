@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PowerFit - Salle de sport [Ville]</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+    <div class="container nav-container">
+        <div class="logo" style="display: flex; align-items: center; gap: 10px;">
+            <img src="images/logo.png" alt="Farouk Gym Logo" style="height: 48px; width: auto; display: block;">
+            <span style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: #222;">Farouk<span style="color: #e63946;">Gym</span></span>
+        </div>
+        <!-- Hamburger -->
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+        </button>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#inscription">Inscription</a></li>
+                <li><a href="#tarifs">Tarifs</a></li>
+                <li><a href="#horaires">Horaires</a></li>
+                <li><a href="#localisation">Localisation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Votre salle de sport à <span>[Ville]</span></h1>
+            <p>Libre accès aux équipements & cours collectifs</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Musculation & Cardio</h3>
+                    <p>Matériel haut de gamme, espace musculation et cardio pour tous niveaux</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-female"></i>
+                    <h3>Fitness, Aérobic & Zumba (Femmes)</h3>
+                    <p>Cours collectifs dynamiques réservés aux femmes : fitness, aérobic, zumba</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-apple-alt"></i>
+                    <h3>Nutritionniste Spécialisé</h3>
+                    <p>Conseils nutritionnels personnalisés pour atteindre vos objectifs</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-user-check"></i>
+                    <h3>Coaching Personnel</h3>
+                    <p>Accompagnement individuel par un coach diplômé pour un suivi sur-mesure</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="inscription" class="inscription">
+        <div class="container">
+            <h2>Prêt à nous rejoindre ?</h2>
+            <div class="inscription-content">
+                <p>L'inscription se fait directement en salle. Voici les documents à préparer :</p>
+                <ul class="documents-list">
+                    <li><i class="fas fa-check"></i> Fiche d'inscription (disponible à l'accueil)</li>
+                    <li><i class="fas fa-check"></i> Certificat médical de non-contre-indication</li>
+                    <li><i class="fas fa-check"></i> Pièce d'identité (CNI/passeport)</li>
+                    <li><i class="fas fa-check"></i> <strong>Carte d'étudiant</strong> (pour bénéficier du tarif étudiant)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ajout de la section Tarifs -->
+    <section id="tarifs" class="tarifs">
+        <div class="container">
+            <h2>Nos Tarifs</h2>
+            <div class="tarifs-box">
+                <table class="tarifs-table">
+                    <thead>
+                        <tr>
+                            <th>Séances/semaine</th>
+                            <th>Tarif Standard</th>
+                            <th>Tarif Étudiant</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="Séances/semaine">1 fois/semaine</td>
+                            <td data-label="Tarif Standard">15€ / mois</td>
+                            <td data-label="Tarif Étudiant">10€ / mois</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Séances/semaine">2 fois/semaine</td>
+                            <td data-label="Tarif Standard">25€ / mois</td>
+                            <td data-label="Tarif Étudiant">18€ / mois</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Séances/semaine">3 fois/semaine</td>
+                            <td data-label="Tarif Standard">30€ / mois</td>
+                            <td data-label="Tarif Étudiant">22€ / mois</td>
+                        </tr>
+                        <tr>
+                            <td data-label="Séances/semaine">Illimité</td>
+                            <td data-label="Tarif Standard">40€ / mois</td>
+                            <td data-label="Tarif Étudiant">30€ / mois</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="info-tarifs"><i class="fas fa-info-circle"></i> Sur présentation d'un justificatif étudiant.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery-slider">
+        <div class="slider-container">
+            <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c6b075e3f8f5');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
+            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </section>
+
+    <!-- Section Horaires -->
+    <section id="horaires" class="hours">
+        <div class="container">
+            <h2>Nos Horaires</h2>
+            <h3>Hors Ramadan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Hommes</th>
+                        <th>Femmes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Jour">Lundi - Jeudi</td>
+                        <td data-label="Hommes">6h - 22h</td>
+                        <td data-label="Femmes">8h - 14h / 16h - 20h</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Jour">Samedi</td>
+                        <td data-label="Hommes">8h - 20h</td>
+                        <td data-label="Femmes">10h - 18h</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Jour">Dimanche</td>
+                        <td data-label="Hommes">9h - 14h</td>
+                        <td data-label="Femmes">9h - 14h</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Jour">Vendredi</td>
+                        <td data-label="Hommes" colspan="2">Fermé</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Horaires Spéciaux Ramadan</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Jour</th>
+                        <th>Hommes</th>
+                        <th>Femmes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="Jour">Samedi - Jeudi</td>
+                        <td data-label="Hommes">10h - 16h / 21h - 00h</td>
+                        <td data-label="Femmes">12h - 16h</td>
+                    </tr>
+                    <tr>
+                        <td data-label="Jour">Vendredi</td>
+                        <td data-label="Hommes" colspan="2">Fermé</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="localisation" class="location">
+        <div class="container">
+            <h2>Nous trouver</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12786.730872051337!2d5.051295244647679!3d36.754186156159456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2cdb7987dfe7d%3A0x7438e18dbaf6b378!2sFarouk%20Gym%20Club!5e0!3m2!1sfr!2sdz!4v1749579340499!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="address">
+                <p><i class="fas fa-map-marker-alt"></i> Q336+MJH Immeuble Bouaiche, Béjaïa 06000 (En face laboratoire d'analyse Moualek)</p>
+                <p>
+                    <a href="https://maps.app.goo.gl/ZqBN1U3rxm2eAG6PA" target="_blank" rel="noopener" class="map-link" style="color: #e63946;">
+                        Voir sur Google Maps
+                    </a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form class="contact-form" action="contact.php" method="POST">
+                <div>
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> contact@faroukgym.fr</p>
+                <p><i class="fas fa-phone"></i> 05 55 72 12 40</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Farouk<span>Gym</span></div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/1Yqh8Kt9Gm/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Farouk Gym. Tous droits réservés.</p>
+                <p><a href="#">Mentions légales</a> | <a href="#">CGV</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
