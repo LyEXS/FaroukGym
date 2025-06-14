@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerFit - Salle de sport [Ville]</title>
+    <title>FaroukGym- Salle de sport [Bejaia]</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="icon" href="images/logo.png" type="image/x-icon" sizes="32x32">
+    <link rel="apple-touch-icon" href="images/logo.png">
 </head>
 <body>
     <header>
@@ -17,7 +20,6 @@
             <img src="images/logo.png" alt="Farouk Gym Logo" style="height: 48px; width: auto; display: block;">
             <span style="font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: #222;">Farouk<span style="color: #e63946;">Gym</span></span>
         </div>
-        <!-- Hamburger -->
         <button class="hamburger" aria-label="Menu" aria-expanded="false">
             <span class="hamburger-line"></span>
             <span class="hamburger-line"></span>
@@ -39,7 +41,7 @@
 
     <section class="hero">
         <div class="hero-content">
-            <h1>Votre salle de sport à <span>[Ville]</span></h1>
+            <h1>Votre salle de sport à <span>Bejaia</span></h1>
             <p>Libre accès aux équipements & cours collectifs</p>
         </div>
     </section>
@@ -56,7 +58,7 @@
                 <div class="service-card">
                     <i class="fas fa-female"></i>
                     <h3>Fitness, Aérobic & Zumba (Femmes)</h3>
-                    <p>Cours collectifs dynamiques réservés aux femmes : fitness, aérobic, zumba</p>
+                    <p>Cours collectifs dynamiques réservés aux femmes : fitness, aérobic, zumba</p>
                 </div>
                 <div class="service-card">
                     <i class="fas fa-apple-alt"></i>
@@ -67,6 +69,171 @@
                     <i class="fas fa-user-check"></i>
                     <h3>Coaching Personnel</h3>
                     <p>Accompagnement individuel par un coach diplômé pour un suivi sur-mesure</p>
+                </div>
+            </div>
+        </div>
+    </section> <section id="programmes" class="programmes">
+        <div class="container">
+            <h2>Programmes d'Exercice & Nutrition</h2>
+            <div class="programmes-grid">
+                <div class="programme-card">
+                    <h3>Prise de Masse Musculaire</h3>
+                    <button class="show-details" data-target="prog1">Voir le programme</button>
+                    <div class="programme-details" id="prog1" style="display:none;">
+                        <strong>🍽 Nutrition (3500-4000 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> 3 œufs + 100g fromage blanc + 2 tranches pain complet + 1 banane</li>
+                            <li><b>Collation :</b> 1 yaourt nature + 30g noix/amandes</li>
+                            <li><b>Déjeuner :</b> 200g poulet/viande + 150g riz complet + lentilles + salade (huile d’olive)</li>
+                            <li><b>Goûter :</b> Sandwich thon/œuf + pain complet</li>
+                            <li><b>Dîner :</b> 200g poisson (sardine/maquereau) + purée de pommes de terre + haricots verts</li>
+                        </ul>
+                        <strong>🏋️ Exercices (4-5x/semaine)</strong>
+                        <ul>
+                            <li>Squat : 4x8-10 reps</li>
+                            <li>Développé couché : 4x8-10 reps</li>
+                            <li>Soulevé de terre : 3x6-8 reps</li>
+                            <li>Rowing barre : 3x10 reps</li>
+                            <li>Dips lestés : 3x10 reps</li>
+                            <li>Cardio léger : 10 min vélo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Perte de Graisse</h3>
+                    <button class="show-details" data-target="prog2">Voir le programme</button>
+                    <div class="programme-details" id="prog2" style="display:none;">
+                        <strong>🍽 Nutrition (1800-2200 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> Flocons d’avoine + lait écrémé + 1 pomme</li>
+                            <li><b>Collation :</b> 1 œuf dur + concombre</li>
+                            <li><b>Déjeuner :</b> 150g poulet + quinoa + salade tomate/oignon</li>
+                            <li><b>Goûter :</b> Yaourt nature + 10 amandes</li>
+                            <li><b>Dîner :</b> Soupe légumes + 100g thon nature</li>
+                        </ul>
+                        <strong>🔥 Exercices (5x/semaine)</strong>
+                        <ul>
+                            <li>HIIT : 20 min (30s sprint/30s repos)</li>
+                            <li>Circuit training :</li>
+                            <ul>
+                                <li>Squats sautés : 3x15</li>
+                                <li>Pompes : 3x15</li>
+                                <li>Fentes : 3x12/jambe</li>
+                                <li>Gainage : 3x30s</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Maintien & Tonification (Femme)</h3>
+                    <button class="show-details" data-target="prog3">Voir le programme</button>
+                    <div class="programme-details" id="prog3" style="display:none;">
+                        <strong>🍽 Nutrition (2000-2400 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> Smoothie (banane/lait/avoine)</li>
+                            <li><b>Collation :</b> Fromage blanc + miel</li>
+                            <li><b>Déjeuner :</b> Pois chiches + semoule + légumes grillés</li>
+                            <li><b>Goûter :</b> 1 orange + 10 noix</li>
+                            <li><b>Dîner :</b> Omelette 2 œufs + épinards + pain complet</li>
+                        </ul>
+                        <strong>💪 Exercices (3-4x/semaine)</strong>
+                        <ul>
+                            <li>Squats : 3x12</li>
+                            <li>Fentes latérales : 3x10/jambe</li>
+                            <li>Tractions assistées : 3x8</li>
+                            <li>Hip thrust : 3x15</li>
+                            <li>Cardio : 30 min vélo</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Force & Explosivité (Homme)</h3>
+                    <button class="show-details" data-target="prog4">Voir le programme</button>
+                    <div class="programme-details" id="prog4" style="display:none;">
+                        <strong>🍽 Nutrition (3000-3500 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> Pain + beurre cacahuète + 3 œufs</li>
+                            <li><b>Collation :</b> Dattes + lait</li>
+                            <li><b>Déjeuner :</b> 200g viande rouge + pâtes complètes + pois</li>
+                            <li><b>Goûter :</b> Sandwich poulet + avocat</li>
+                            <li><b>Dîner :</b> Cottage cheese + olives + pain complet</li>
+                        </ul>
+                        <strong>💥 Exercices (4x/semaine)</strong>
+                        <ul>
+                            <li>Squat lourd : 5x5 reps</li>
+                            <li>Développé militaire : 4x6</li>
+                            <li>Deadlift : 4x5</li>
+                            <li>Plyométrie :</li>
+                            <ul>
+                                <li>Box jumps : 3x8</li>
+                                <li>Sprints : 5x20m</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Endurance & Cardio</h3>
+                    <button class="show-details" data-target="prog5">Voir le programme</button>
+                    <div class="programme-details" id="prog5" style="display:none;">
+                        <strong>🍽 Nutrition (2500-3000 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> Muesli + lait + miel</li>
+                            <li><b>Collation :</b> Dattes + amandes</li>
+                            <li><b>Déjeuner :</b> Pâtes + thon + tomate</li>
+                            <li><b>Goûter :</b> Banane + café</li>
+                            <li><b>Dîner :</b> Poulet + patate douce + carottes</li>
+                        </ul>
+                        <strong>🏃 Exercices (5x/semaine)</strong>
+                        <ul>
+                            <li>Cardio long : 45 min course</li>
+                            <li>Renfo léger :</li>
+                            <ul>
+                                <li>Pompes : 3x15</li>
+                                <li>Gainage : 3x30s</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Récupération Active</h3>
+                    <button class="show-details" data-target="prog6">Voir le programme</button>
+                    <div class="programme-details" id="prog6" style="display:none;">
+                        <strong>🍽 Nutrition (2000 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> Pancakes avoine/banane</li>
+                            <li><b>Collation :</b> Smoothie lait/banane</li>
+                            <li><b>Déjeuner :</b> Poisson + riz + légumes</li>
+                            <li><b>Goûter :</b> Fromage blanc + noix</li>
+                            <li><b>Dîner :</b> Soupe légumes + pain complet</li>
+                        </ul>
+                        <strong>🧘 Exercices (2x/semaine)</strong>
+                        <ul>
+                            <li>Étirements : 20 min yoga</li>
+                            <li>Cardio très léger : 15 min marche</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="programme-card">
+                    <h3>Débutant (Homme/Femme)</h3>
+                    <button class="show-details" data-target="prog7">Voir le programme</button>
+                    <div class="programme-details" id="prog7" style="display:none;">
+                        <strong>🍽 Nutrition (2200-2500 kcal/jour)</strong>
+                        <ul>
+                            <li><b>Petit-déjeuner :</b> 2 œufs + pain + fromage blanc</li>
+                            <li><b>Collation :</b> Yaourt + amandes</li>
+                            <li><b>Déjeuner :</b> Poulet + riz + légumes</li>
+                            <li><b>Goûter :</b> Sandwich thon</li>
+                            <li><b>Dîner :</b> Omelette + épinards</li>
+                        </ul>
+                        <strong>🏋️ Exercices (3x/semaine)</strong>
+                        <ul>
+                            <li>Squats : 3x12</li>
+                            <li>Pompes : 3x10</li>
+                            <li>Tractions assistées : 3x8</li>
+                            <li>Gainage : 3x20s</li>
+                            <li>Cardio léger : 10 min vélo</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -87,7 +254,6 @@
         </div>
     </section>
 
-    <!-- Ajout de la section Tarifs -->
     <section id="tarifs" class="tarifs">
         <div class="container">
             <h2>Nos Tarifs</h2>
@@ -103,23 +269,23 @@
                     <tbody>
                         <tr>
                             <td data-label="Séances/semaine">1 fois/semaine</td>
-                            <td data-label="Tarif Standard">2000DA / mois</td>
-                            <td data-label="Tarif Étudiant">1500DA / mois</td>
+                            <td data-label="Tarif Standard">1000 DA / mois</td>
+                            <td data-label="Tarif Étudiant">500 DA / mois</td>
                         </tr>
                         <tr>
                             <td data-label="Séances/semaine">2 fois/semaine</td>
-                             <td data-label="Tarif Standard">2000DA / mois</td>
-                            <td data-label="Tarif Étudiant">1500DA / mois</td>
+                            <td data-label="Tarif Standard">1500 DA / mois</td>
+                            <td data-label="Tarif Étudiant">1000 DA / mois</td>
                         </tr>
                         <tr>
                             <td data-label="Séances/semaine">3 fois/semaine</td>
-                               <td data-label="Tarif Standard">2000DA / mois</td>
-                            <td data-label="Tarif Étudiant">1500DA / mois</td>
+                            <td data-label="Tarif Standard">2000 DA / mois</td>
+                            <td data-label="Tarif Étudiant">1500 DA / mois</td>
                         </tr>
                         <tr>
                             <td data-label="Séances/semaine">Illimité</td>
-                              <td data-label="Tarif Standard">2000DA / mois</td>
-                            <td data-label="Tarif Étudiant">1500DA / mois</td>
+                            <td data-label="Tarif Standard">4000 DA / mois</td>
+                            <td data-label="Tarif Étudiant">3000 DA / mois</td>
                         </tr>
                     </tbody>
                 </table>
@@ -133,13 +299,12 @@
             <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
             <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019614242-c6b075e3f8f5');"></div>
             <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
-            <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b');"></div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
+            <div class="slide" style="background-image: url('images/logo.png');"></div>
+            <button class="prev">❮</button>
+            <button class="next">❯</button>
         </div>
     </section>
 
-    <!-- Section Horaires -->
     <section id="horaires" class="hours">
         <div class="container">
             <h2>Nos Horaires</h2>
@@ -202,7 +367,7 @@
         <div class="container">
             <h2>Nous trouver</h2>
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12786.730872051337!2d5.051295244647679!3d36.754186156159456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2cdb7987dfe7d%3A0x7438e18dbaf6b378!2sFarouk%20Gym%20Club!5e0!3m2!1sfr!2sdz!4v1749579340499!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2505.7330544349256!2d5.059020074799607!3d36.754186572260274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12f2cdb7987dfe7d%3A0x7438e18dbaf6b378!2sFarouk%20Gym%20Club!5e1!3m2!1sfr!2sdz!4v1749923030558!5m2!1sfr!2sdz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="address">
                 <p><i class="fas fa-map-marker-alt"></i> Q336+MJH Immeuble Bouaiche, Béjaïa 06000 (En face laboratoire d'analyse Moualek)</p>
@@ -252,7 +417,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2023 Farouk Gym. Tous droits réservés.</p>
+                <p>© 2023 Farouk Gym. Tous droits réservés.</p>
                 <p><a href="#">Mentions légales</a> | <a href="#">CGV</a></p>
             </div>
         </div>

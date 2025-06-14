@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
-            
+
             const targetId = this.getAttribute('href');
             if (targetId === '#') return;
-            
+
             const targetElement = document.querySelector(targetId);
             if (targetElement) {
                 window.scrollTo({
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // Animation des éléments au scroll
     const animateOnScroll = function() {
         const elements = document.querySelectorAll('.service-card, .inscription-content, .hours table, .map-container');
-        
+
         elements.forEach(element => {
             const elementPosition = element.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            
+
             if (elementPosition < windowHeight - 100) {
                 element.style.opacity = '1';
                 element.style.transform = 'translateY(0)';
@@ -44,16 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Déclenchement au chargement et au scroll
     animateOnScroll();
     window.addEventListener('scroll', animateOnScroll);
-
-    // Adaptation du menu en fonction de la taille de l'écran
-    window.addEventListener('resize', function() {
-        const nav = document.querySelector('nav ul');
-        if (window.innerWidth > 768) {
-            nav.style.display = 'flex';
-        } else {
-            nav.style.display = 'none';
-        }
-    });
 
     // Gestion du slider
     const slides = document.querySelectorAll('.slide');
@@ -127,24 +117,51 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const hamburger = document.querySelector('.hamburger');
-    const mainMenu = document.querySelector('.main-menu');
-    const nav = document.querySelector('nav');
+    const mainMenu = document.querySelector('.main-menu'); // Conservé pour la sélection des liens
+    const nav = document.querySelector('nav'); // L'élément <nav>
 
-    // Hamburger menu
+    // Menu hamburger
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
-        mainMenu.classList.toggle('show');
-        nav.classList.toggle('active');
-        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+        nav.classList.toggle('active'); // Bascule la classe 'active' sur l'élément <nav>
+        document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : ''; // Empêche le défilement
     });
 
     // Fermer le menu au clic sur un lien
     mainMenu.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             hamburger.classList.remove('active');
-            mainMenu.classList.remove('show');
-            nav.classList.remove('active');
-            document.body.style.overflow = '';
+            nav.classList.remove('active'); // Retire la classe 'active' de l'élément <nav>
+            document.body.style.overflow = ''; // Réactive le défilement
+        });
+    });
+
+    // Adaptation du menu en fonction de la taille de l'écran - Logique corrigée
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768) {
+            // Si la fenêtre est plus large que le point de rupture mobile,
+            // s'assurer que l'état du menu mobile est réinitialisé.
+            if (hamburger.classList.contains('active')) {
+                hamburger.classList.remove('active');
+            }
+            if (nav.classList.contains('active')) {
+                nav.classList.remove('active');
+            }
+            document.body.style.overflow = ''; // Réactiver le défilement
+        }
+    });
+
+    // Affichage/masquage des détails des programmes
+    document.querySelectorAll('.show-details').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const target = document.getElementById(this.dataset.target);
+            if (target.style.display === "none" || target.style.display === "") {
+                target.style.display = "block";
+                this.textContent = "Masquer le programme";
+            } else {
+                target.style.display = "none";
+                this.textContent = "Voir le programme";
+            }
         });
     });
 });
@@ -152,10 +169,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // Changement d'image de la galerie au hover (optionnel)
 document.querySelectorAll('.gallery-item').forEach(item => {
     item.addEventListener('mouseenter', function() {
-        // Vous pouvez ajouter ici un effet de zoom ou de changement d'image
         this.style.transform = 'scale(1.02)';
     });
-    
+
     item.addEventListener('mouseleave', function() {
         this.style.transform = 'scale(1)';
     });
